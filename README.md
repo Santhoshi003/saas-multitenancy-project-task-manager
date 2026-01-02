@@ -15,7 +15,7 @@ All application components (**database, backend, and frontend**) can be started 
 * Express.js
 * PostgreSQL
 * JWT-based authentication
-* Role-Based Access Control (RBAC)
+* Role-Based Access Control 
 
 ### Frontend
 
