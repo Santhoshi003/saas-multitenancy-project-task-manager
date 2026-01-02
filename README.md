@@ -120,7 +120,7 @@ A complete demonstration covering:
 
 ---
 
-## 📌 Notes for Reviewers
+##  Notes for Reviewers
 
 * The application is fully containerized
 * All services start using `docker-compose up -d`
