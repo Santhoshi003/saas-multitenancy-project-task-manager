@@ -1,61 +1,66 @@
 # Multi-Tenant SaaS Platform
 
-This project is a fully dockerized Multi-Tenant SaaS application built using **Node.js, PostgreSQL, React, and Docker**.  
-It supports **tenant isolation**, **role-based access control**, and **project & task management**.
+This repository contains a **fully containerized Multi-Tenant SaaS platform** developed using **Node.js, PostgreSQL, React, and Docker**.
+The system is designed to support **strict tenant isolation**, **role-based access control**, and **project and task management** across multiple tenants.
 
-The entire application (database, backend, frontend) starts automatically using **one command**.
+All application components (**database, backend, and frontend**) can be started together using a **single Docker command**.
 
 ---
 
-##  Tech Stack
+## 🛠️ Technology Stack
 
 ### Backend
-- Node.js
-- Express.js
-- PostgreSQL
-- JWT Authentication
-- Role-Based Access Control (RBAC)
+
+* Node.js
+* Express.js
+* PostgreSQL
+* JWT-based authentication
+* Role-Based Access Control (RBAC)
 
 ### Frontend
-- React (Vite)
-- Axios
-- Role-based UI rendering
+
+* React (Vite)
+* Axios for API communication
+* Role-aware UI rendering
 
 ### Infrastructure
-- Docker
-- Docker Compose
+
+* Docker
+* Docker Compose
 
 ---
 
-##  How to Run the Project (MANDATORY)
+## 🚀 Running the Application (Required)
 
 ### Prerequisites
-Make sure the following are installed:
-- Docker
-- Docker Compose
+
+Ensure the following tools are installed on your system:
+
+* Docker
+* Docker Compose
 
 ---
 
-### ▶️ Start the Application
+### ▶️ Start Services
 
-From the **project root directory**, run:
+From the **root directory of the project**, execute:
 
 ```bash
 docker-compose up -d
-````
+```
 
-This single command will:
+This command will automatically:
 
-* Start PostgreSQL database
-* Run backend migrations & seed data automatically
-* Start backend API
-* Start frontend application
+* Launch the PostgreSQL database
+* Apply database migrations and seed initial data
+* Start the backend API service
+* Start the frontend web application
 
-⚠️ **No manual database setup is required.**
+⚠️ **No manual database or environment setup is needed.**
 
 ---
 
-##  Access the Application
+## 🌐 Application Access
 
 | Service      | URL                                                                  |
 | ------------ | -------------------------------------------------------------------- |
@@ -65,60 +70,61 @@ This single command will:
 
 ---
 
-##  Authentication & Roles
+## 🔐 Authentication & Roles
 
-The system supports the following roles:
+The platform supports the following user roles:
 
-* **super_admin** – Global system administrator
-* **tenant_admin** – Tenant-level administrator
-* **user** – Regular tenant user
+* **super_admin** – System-wide administrator
+* **tenant_admin** – Administrator within a tenant
+* **user** – Standard tenant user
 
-Each tenant’s data is completely isolated from other tenants.
-
----
-
-##  Core Features
-
-* Tenant registration & login
-* User management (RBAC enforced)
-* Project management
-* Task management
-* Secure JWT authentication
-* Multi-tenant data isolation
-* Fully dockerized setup
+All tenant data is **securely isolated**, ensuring no cross-tenant access.
 
 ---
 
-##  Testing the Application
+## ✨ Key Features
 
-After starting the application:
-
-1. Open the frontend in browser
-2. Login using credentials from `submission.json`
-3. Verify:
-
-   * Tenant isolation
-   * Role-based access
-   * Project & task operations
+* Tenant registration and authentication
+* Role-based user management
+* Project creation and management
+* Task assignment and tracking
+* Secure JWT-based authentication
+* Strong multi-tenant data separation
+* Fully Dockerized deployment
 
 ---
 
-##  Demo Video
+## 🧪 Verifying Functionality
 
-A complete demo video showcasing:
+After starting the services:
 
-* Architecture walkthrough
-* Docker startup
-* Multi-tenancy
+1. Open the frontend in a browser
+2. Log in using the credentials provided in `submission.json`
+3. Validate:
+
+   * Tenant-level data isolation
+   * Role-based access restrictions
+   * Project and task workflows
+
+---
+
+## 🎥 Demo Video
+
+A complete demonstration covering:
+
+* Application architecture overview
+* Docker-based startup process
+* Multi-tenant behavior
 * User, project, and task flows
 
-👉 **YouTube link will be added here.**
 
 ---
 
-## 📌 Notes for Evaluators
+## 📌 Notes for Reviewers
 
-* The application is fully dockerized
-* All services start with `docker-compose up -d`
-* Database migrations and seed data load automatically
-* No manual commands are required
+* The application is fully containerized
+* All services start using `docker-compose up -d`
+* Database migrations and seed data run automatically
+* No additional manual setup steps are required
+
+---
