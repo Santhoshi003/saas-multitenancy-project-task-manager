@@ -27,7 +27,6 @@ All application components (**database, backend, and frontend**) can be started 
 
 * Docker
 * Docker Compose
-
 ---
 
 ## 🚀 Running the Application (Required)
