@@ -40,7 +40,7 @@ Ensure the following tools are installed on your system:
 
 ---
 
-### ▶️ Start Services
+###  Start Services
 
 From the **root directory of the project**, execute:
 
