@@ -126,5 +126,6 @@ https://drive.google.com/file/d/1VI4yJEyLTX-pg5vrnenFVK7F_cY2hMCe/view?usp=drive
 * The application is fully containerized
 * All services start using `docker-compose up -d`
 * Database migrations and seed data run automatically
+* No additional manual setup steps are required
 
 ---
