@@ -93,7 +93,7 @@ All tenant data is **securely isolated**, ensuring no cross-tenant access.
 
 ---
 
-## 🧪 Verifying Functionality
+##  Verifying Functionality
 
 After starting the services:
 
